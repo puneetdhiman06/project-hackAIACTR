@@ -1,9 +1,12 @@
 body{
     background: black;
-    height: 100rem;
+    height: 1000rem;
 }
-.navbar-brand{
+.text{
     color: white;
+}
+#center{
+    
 }
 .jumbotron{
     height: 35rem;
@@ -15,6 +18,7 @@ body{
     height: 27rem;
    
 }
+
 #jumbo-right{
     
     float: right;
@@ -39,31 +43,21 @@ body{
     
 }
 
-#recoverd{
-    background-color:green;
-    width: 45%;
+#info-infected{
+    color: white;
+    text-align: center;
+}s
+#recover{
+    width: 94%;
+    background-color: green;
 }
 #death{
-    width: 50%;
+    width: 6%;
+     background-color: deepskyblue;
 }
-.text1{
-    color: white;
-    
-    font-size: bold
-        ;
-}
-.text2{
-    color: white;
-    font-size: 2rem;
+#edit{
+    border: 1px dotted white;
+    margin-top:5rem;
+    padding: 4rem;
     
 }
-#heading{
-    font-size: 3rem;
-    color: white;
-    font-weight: bold;
-}
-#update{
-    color: white;
-    float: right;
-}
-

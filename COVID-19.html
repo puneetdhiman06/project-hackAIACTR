@@ -13,17 +13,17 @@
     </script>   
     <link href="covid.css" type="text/css" rel="stylesheet">
     <title>project</title>
-    </head>
-    <body>
+  </head>
+  <body>
       
 
 
-<!-- Modal
+<!--
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel2">DISCLAIMER</h5>
+        <h5 class="modal-title" id="exampleModalLabel">DISCLAIMER</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -40,7 +40,7 @@
 </div>
  -->
      <!-- top  -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container">
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -48,19 +48,31 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="navbar-brand" href="#" >Home <span class="sr-only">(current)</span></a>
+                    <a class="navbar-brand" href="#" style="border-bottom:">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:white">About</a>
+                    <a class="nav-link" href="#" style="color: white">Treatments</a>
                   </li>
-    
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color:white"> Contact Us</a>
+                    <a class="nav-link" href="#" style="color: white">Symptoms</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">Prevention</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">About</a>
+                  </li>    
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">Update Data</a>
+                  </li>  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: white">Contact Us</a>
+                  </li>    
+                      
                 </ul>
               </div>
-            </div>
-            </nav>
+            </div>        
+        </nav>
      
  <!--iframe -->     
       
@@ -74,156 +86,115 @@
       <p id="iframe-text">Free feel to zoom IN to have a closer look.</p>
         
         <p><div class="alert alert-secondary" role="alert">
-            <img src="bio.png" id="bio">:  This symbols represent the exact building in which an idnivisual is found to be Corona-Positive. For more information <a href="">CLICK HERE</a>
+            <img src="bio.png" id="bio">:  This symbols show the exact building in which an idnivisual is found to be Corona-Positive. For more information <a href="">CLICK HERE</a>
             </div></p>
         <p><div class="alert alert-danger" role="alert">
                      This marked area is a RED ZONE.
         </div></p>
         <p><div class="alert alert-warning" role="alert">
                      This marked area is a YELLOW ZONE. 
-        </div></p>  
+        </div></p>
+            
     </div>  
   </div>
 </div>     
-    <!-- rest of the info  --> 
+    
+<div class="container" id="info-infected">
+
+<h1> ###########        info      #########</h1>
+    <h1>   COMING SOON       </h1>
+
+</div>
+
+
+
+<!--  progress bar -->
+<br><br><br><br>
+
 <div class="container">
-<p id="heading">CASE METER</p>  
+    <h1 class="text">CASE METER</h1><br><br>
+    <h2 id="total" class="text">TOTAL CASES  : <span id="total-info">167,250</span></h2><br><br>
+    <p id="close-t" class="text">CLOSED  CASES  : <span id="close-info">76,166</span></p><br>
+    <p id="recover-t" class="text">RECOVERED CASES  : <span id="recover-info">71,369</span></p>
     
-    <br>
-  <p class=text2 >TOTOAL:  <span id="total-val">167,250</span></p>
- 
-
-<br>
-<p class="text1">RECOVERED:  <span id="recovered-val">71,369</span></p>
-
-    <div class="progress">
-  <div class="progress-bar  progress-bar-striped progress-bar-animated" id="recoverd" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-</div>
-    <br><br>
-<p class="text1">DEATH: <span id="death-val">4,797</span></p>
-    
-        <div class="progress">
-  <div class="progress-bar  progress-bar-striped progress-bar-animated" id="death" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
-         
-        </div>
-</div>
-
-
-
-
-
-
-
-
-            <!-- Modal -->
-<br>
-<br>
- <div class="container">   
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">EDIT</button>
-     
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">TO UPDATE THE INFORMATION</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-           <form>
-              <div class="form-group">
-                <label for="toal">TOTAL CASES</label>
-                <input type="text" class="form-control" id=" update-total">
-              </div>
-              <div class="form-group">
-                <label for="recover">RECOVERED CASES</label>
-                <input type="text" class="form-control" id=" update-recovered">
-              </div>
-
-              <div class="form-group">
-                <label for="death">DEATH</label>
-                <input type="text" class="form-control" id=" update-death">
-              </div>
-          </form>
-                <p class="small" id="update">updated : on <span id="update-curn">30 min ago</span></p>  
-                <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button class="btn btn-primary" id="update">UPDATE</button>
-                </div>
-      </div>
-  </div>
+<div class="progress">
+  
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="recover"></div>
+</div><br><br>
+    <p id="death-t" class="text">DEATH CASES  : <span id="death-info">4,797</span></p>
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="death"></div>
 </div>
 </div>
 
-        
-        
 
+
+
+<!-- EDITING -->
+
+<div class="container">
+    <div class="text" id="edit">
+         <h3>UPDATING WINDOW</h3><br>
+                <p>Enter to update TOTAL cases:</p>
+                <p><input type="text" id="update-total"></p>
+                <br>
+                <p>Enter to update CLOSED cases:</p>
+                <p><input type="text" id="update-close"></p>
+                <br>
+                <p>Enter to update REVOVERED cases:</p>
+                <p><input type="text" id="update-recover"></p>
+                <br>
+                <p> Enter to update DEATH cases:</p>
+                <p><input type="text" id="update-death"></p>
+                <p><button id="update-btn">UPDATE</button></p>
+                <p class="small">updated : <span id="update-curn">30 min ago</span></p>
+            
+</div>
+
+</div>
+<!--END -->
+    <script>
+    $("#update-btn").click(function(){
         
         
-<!--END -->  
-    <script type="text/javascript">
- 
-   //to display quick disclamer
-        
-   $(document).ready(function(){
-                  $("#exampleModal2").modal('show');
-                  });
-        
-    //to update the bar    
-     
-     $(document).on("click", "#update", function(event){
-         var updated_val_to= $("#update-total").val();
-         var updated_val_re= $("#update-recovered").val();
-         var updated_val_de= $("#update-death").val(); 
-         
-         
-         
-         
-//to change the text
-         
-         
-         
-document.getElementById("total-val").innerHTML= updated_val_to;
-document.getElementById("recovered-val").innerHTML= updated_val_re;
-document.getElementById("death-val").innerHTML= updated_val_de;
-         
-         
-         // function to calculate
-        function per_calculator(a){
+     var update_total = $("#update-total").val();   
+    var update_close = $("#update-close").val();   
+        var update_recover = $("#update-recover").val();   
+        var update_death = $("#update-death").val();   
       
-            var y= ((a/updated_val_to)*100);
-            return(y);
-            }
-         
-         // function calling
-         
-         var x= per_calculator(updated_val_re);
-         var z= per_calculator(updated_val_de);
-         
-        //jQuery to chnage the width 
-         
-  $("#recoverd").width(x+"%"); 
-  $("#death").width(z+"%");
-         
-         
-         
-    //time update.     
-         
-         
-        var currentdate = new Date(); 
-        var datetime = currentdate.getDate() + "/"
+        
+     document.getElementById("total-info").innerHTML=update_total;    
+    document.getElementById("close-info").innerHTML=update_close;    
+     document.getElementById("recover-info").innerHTML=update_recover;    
+     document.getElementById("death-info").innerHTML=update_death;        
+        
+        
+     
+        
+        
+        
+    var currentdate = new Date(); 
+    var datetime ="on " + currentdate.getDate() + "/"
                         + (currentdate.getMonth()+1)  + "/" 
-                        + currentdate.getFullYear() + " @ "  
+                        + currentdate.getFullYear() + " at "  
                         + currentdate.getHours() + ":"  
                         + currentdate.getMinutes() + ":" 
                         + currentdate.getSeconds();
-    document.getElementById("update-curn").innerHTML=datetime;
-    });
+
+         document.getElementById("update-curn").innerHTML=datetime;
+    })  ;
         
+        
+        //disclamer 
+    /*    
+  $(document).ready(function(){
+               $("#exampleModal2").modal('show');
+       })    
+      */   
 
 
        
+        
     </script>  
       
   </body>
