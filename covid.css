@@ -1,8 +1,12 @@
 body{
     background: black;
+    height: 100rem;
+}
+.navbar-brand{
+    color: white;
 }
 .jumbotron{
-    height: 40rem;
+    height: 35rem;
 }
 #jumbo-left{
     
@@ -11,7 +15,6 @@ body{
     height: 27rem;
    
 }
-
 #jumbo-right{
     
     float: right;
@@ -35,3 +38,32 @@ body{
     padding-left: 
     
 }
+
+#recoverd{
+    background-color:green;
+    width: 45%;
+}
+#death{
+    width: 50%;
+}
+.text1{
+    color: white;
+    
+    font-size: bold
+        ;
+}
+.text2{
+    color: white;
+    font-size: 2rem;
+    
+}
+#heading{
+    font-size: 3rem;
+    color: white;
+    font-weight: bold;
+}
+#update{
+    color: white;
+    float: right;
+}
+
