@@ -1,2 +1,3 @@
-# project-hackAIACTR
-we are creating a website for the hackAIACTR .
+First of all we are Sorry for the delayed update as we were finding difficult to run github. Also we were involved in another project. 
+
+We our building a website on the awareness of COVID-19.
