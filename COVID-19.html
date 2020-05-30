@@ -63,11 +63,11 @@
                     <a class="nav-link" href="#" style="color: white">About</a>
                   </li>    
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white">Update Data</a>
-                  </li>  
-                  <li class="nav-item">
                     <a class="nav-link" href="#" style="color: white">Contact Us</a>
-                  </li>    
+                  </li>  
+                <form class="form-inline my-2 my-lg-0">
+                  <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:12rem;" href="tel:+918377951023">CALL FOR EMERGENCY</button>
+                </form>     
                       
                 </ul>
               </div>
@@ -112,16 +112,17 @@
 <br><br><br><br>
 
 <div class="container">
-    <h1 class="text">CASE METER</h1><br><br>
-    <h2 id="total" class="text">TOTAL CASES  : <span id="total-info">167,250</span></h2><br><br>
-    <p id="close-t" class="text">CLOSED  CASES  : <span id="close-info">76,166</span></p><br>
-    <p id="recover-t" class="text">RECOVERED CASES  : <span id="recover-info">71,369</span></p>
+    <h1 class="text">CASE METER </h1>
+    <small class="text">ALL OVER INDIA</small><br><br>
+    <h2 id="total" class="text">TOTAL CASES  : <span id="total-info">174,301</span></h2><br><br>
+    <p id="close-t" class="text">CLOSED  CASES  : <span id="close-info">87,712</span></p><br>
+    <p id="recover-t" class="text">RECOVERED CASES  : <span id="recover-info">82,731</span></p>
     
 <div class="progress">
   
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="recover"></div>
 </div><br><br>
-    <p id="death-t" class="text">DEATH CASES  : <span id="death-info">4,797</span></p>
+    <p id="death-t" class="text">DEATH CASES  : <span id="death-info">4,981</span></p>
 <div class="progress">
   <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" id="death"></div>
 </div>
@@ -152,37 +153,131 @@
 </div>
 
 </div>
+<div class="container" id="error-cont">
+    
+    <span id="errormsgs" style="color: white;"></span>
+    
+</div>
 <!--END -->
-    <script>
-    $("#update-btn").click(function(){
-        
-        
-     var update_total = $("#update-total").val();   
-    var update_close = $("#update-close").val();   
-        var update_recover = $("#update-recover").val();   
-        var update_death = $("#update-death").val();   
-      
-        
-     document.getElementById("total-info").innerHTML=update_total;    
-    document.getElementById("close-info").innerHTML=update_close;    
-     document.getElementById("recover-info").innerHTML=update_recover;    
-     document.getElementById("death-info").innerHTML=update_death;        
-        
-        
-     
-        
-        
-        
-    var currentdate = new Date(); 
-    var datetime ="on " + currentdate.getDate() + "/"
-                        + (currentdate.getMonth()+1)  + "/" 
-                        + currentdate.getFullYear() + " at "  
-                        + currentdate.getHours() + ":"  
-                        + currentdate.getMinutes() + ":" 
-                        + currentdate.getSeconds();
 
-         document.getElementById("update-curn").innerHTML=datetime;
-    })  ;
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+    $("#update-btn").click(function()
+    {
+        
+                var errormsg="";
+                var fieldmissing="";
+
+                var update_total = $("#update-total").val();   
+                var update_close = $("#update-close").val();   
+                var update_recover = $("#update-recover").val();   
+                var update_death = $("#update-death").val();   
+
+                 
+      if( update_total == "")
+        {
+                 fieldmissing+="<br>missing total";
+
+             }
+        if( update_close == ""){
+            fieldmissing+="<br>missing closed";
+        }
+           
+        if( update_recover == ""){
+            fieldmissing+="<br>missing recovered";
+            
+        }
+        
+        if( update_death == ""){
+            fieldmissing+="<br>missing death";
+            
+        }
+        if( fieldmissing != "")
+            {
+                errormsg+="<p>FOLLOWING FEILD(s) ARE MISSING :" + fieldmissing +"</p>";
+                
+            }
+        if( $.isNumeric(update_total) == false )
+            {
+                errormsg+="<br>TOTAL is not numeric data";
+               
+            }
+          if( $.isNumeric(update_close) == false )
+            {
+                errormsg+="<br>CLOSED is not numeric data";
+             
+            }
+          if( $.isNumeric(update_recover) == false )
+            {
+                errormsg+="<br>RECOVERED is not numeric data";
+              
+            }
+          if( $.isNumeric(update_death) == false )
+            {
+                errormsg+="<br>DEATH is not numeric data";
+               
+            }
+        if(errormsg != "")
+            {
+                document.getElementById("errormsgs").innerHTML = errormsg + "PLEASE ENTER VALID DATA";
+            }
+        
+        
+        
+        
+        
+        else{                  $("#error-cont").hide();
+                               function bar_update(a){
+                                      var z = ((a/update_close)*100);
+                                      return(z);    
+                                                        }; 
+
+                                        var x = bar_update(update_recover);
+                                       $("#recover").width(x + "%");
+
+                                         var y = bar_update(update_death);
+                                       $("#death").width(y + "%");    
+
+
+                                    document.getElementById("total-info").innerHTML=update_total;    
+                                    document.getElementById("close-info").innerHTML=update_close;    
+                                    document.getElementById("recover-info").innerHTML=update_recover;    
+                                    document.getElementById("death-info").innerHTML=update_death;        
+
+
+
+
+
+
+                                    var currentdate = new Date(); 
+                                    var datetime ="on " + currentdate.getDate() + "/"
+                                                        + (currentdate.getMonth()+1)  + "/" 
+                                                        + currentdate.getFullYear() + " at "  
+                                                        + currentdate.getHours() + ":"  
+                                                        + currentdate.getMinutes() + ":" 
+                                                        + currentdate.getSeconds();
+
+                                    document.getElementById("update-curn").innerHTML=datetime;
+
+                         };
+
+                  
+    });      
+
+
+
+        
+
         
         
         //disclamer 

@@ -46,7 +46,7 @@ body{
 #info-infected{
     color: white;
     text-align: center;
-}s
+}
 #recover{
     width: 94%;
     background-color: green;
@@ -60,4 +60,8 @@ body{
     margin-top:5rem;
     padding: 4rem;
     
+}
+#error-cont{
+    color: red;
+    margin: 4rem;
 }
