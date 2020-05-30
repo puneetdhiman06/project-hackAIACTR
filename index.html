@@ -11,14 +11,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.7/js/tether.min.js"></script>
     <script  src="https://cdnjs.cloudflare.com/ajax/libs/javascript.util/0.12.12/javascript.util.min.js">
     </script>   
-    <link href="covid.css" type="text/css" rel="stylesheet">
+    <link href="index.css" type="text/css" rel="stylesheet">
     <title>project</title>
   </head>
   <body>
       
 
 
-<!--
+<!-- modal  -->
 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -29,7 +29,7 @@
         </button>
       </div>
       <div class="modal-body">
-        This project is made by PUNEET DHIMAN & .... As we are learner, just a team of two and made it in a very small span of time, So it is just a prototype. But if people like this project we can evolve it and can cover many more areas like these. 
+        Hope you all are safe<br>This project is just a prototype and As we are learner also just a team of two and made it in a very small span of time, So you may find some bugs. But if people like this project we can evolve it and can cover many more areas like these. <br>Please email us for bug fixes.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-dismiss="modal">Understood</button>
@@ -38,7 +38,7 @@
     </div>
   </div>
 </div>
- -->
+
      <!-- top  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-dark">
                 <div class="container">
@@ -48,27 +48,26 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                   <li class="nav-item active">
-                    <a class="navbar-brand" href="#" style="border-bottom:">Home <span class="sr-only">(current)</span></a>
+                    <a class="navbar-brand" href="#" style="border-bottom;">Home <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white">Treatments</a>
+                    <a class="nav-link" href="treatment.html" style="color: white">Treatments</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white">Symptoms</a>
+                    <a class="nav-link" href="symptomes.html" style="color: white">Symptoms</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white">Prevention</a>
+                    <a class="nav-link" href="prevention.html" style="color: white">Prevention</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white">About</a>
+                    <a class="nav-link" href="about.html" style="color: white">About</a>
                   </li>    
                   <li class="nav-item">
-                    <a class="nav-link" href="#" style="color: white">Contact Us</a>
+                    <a class="nav-link" href="contact.html" style="color: white">Contact Us</a>
+                  </li>
+                   <li>
+                    <a class="nav-link" href="tell:23978046" style="color:red">CALL FOR EMERGENCY</a>
                   </li>  
-                <form class="form-inline my-2 my-lg-0">
-                  <button class="btn btn-outline-success my-2 my-sm-0" style="margin-left:12rem;" href="tel:+918377951023">CALL FOR EMERGENCY</button>
-                </form>     
-                      
                 </ul>
               </div>
             </div>        
@@ -86,7 +85,7 @@
       <p id="iframe-text">Free feel to zoom IN to have a closer look.</p>
         
         <p><div class="alert alert-secondary" role="alert">
-            <img src="bio.png" id="bio">:  This symbols show the exact building in which an idnivisual is found to be Corona-Positive. For more information <a href="">CLICK HERE</a>
+            <img src="bio.png" id="bio">:  This symbols show the exact building in which an idnivisual is found to be Corona-Positive. For more information.
             </div></p>
         <p><div class="alert alert-danger" role="alert">
                      This marked area is a RED ZONE.
@@ -100,9 +99,37 @@
 </div>     
     
 <div class="container" id="info-infected">
-
-<h1> ###########        info      #########</h1>
-    <h1>   COMING SOON       </h1>
+<h1> INFORMATION ABOUT THE PERSON INFECTED </h1>
+<table class="table">
+  <thead>
+    <tr class="text">
+      <th scope="col">#</th>
+      <th scope="col">Name</th>
+      <th scope="col">Address</th>
+      <th scope="col">Ststus</th>
+    </tr>
+  </thead>
+  <tbody class="text">
+    <tr>
+      <th scope="row">1</th>
+      <td>Mariyam <small>(A Nurse)</small></td>
+      <td>A-43</td>
+      <td>Had been recovered successfully (8/April)</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Ritu & Sunil</td>
+      <td>A-64</td>
+      <td>Came from Haryana and found to be positive(+) on (23/May)</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Kamal Panday<small> (RWA member)</small></td>
+      <td>B-32</td>
+      <td>Found positive(+) recently (28/May) </td>
+    </tr>
+  </tbody>
+</table>
 
 </div>
 
@@ -149,21 +176,27 @@
                 <p><input type="text" id="update-death"></p>
                 <p><button id="update-btn">UPDATE</button></p>
                 <p class="small">updated : <span id="update-curn">30 min ago</span></p>
-            
+                <p id="warning"><span id="war">Warning</span> : Only update the confirmed data as it might risk someones life. Authorisation with signuped members only coming soon.</p>      
+              
 </div>
 
 </div>
-<div class="container" id="error-cont">
-    
-    <span id="errormsgs" style="color: white;"></span>
-    
+<div class="container" >
+   <div id="error-cont"> 
+    <span id="errormsgs"></span>
+    </div>
+</div>
+
+
+
+<div id="footer">
+<div class="container" >
+    <div id="qw">
+<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/question-and-answers-hub/q-a-detail/q-a-coronaviruses#:~:text=protect">To know more visit WHO official website</a>
+</div>
+    </div>
 </div>
 <!--END -->
-
-
-
-
-
 
 
 
@@ -207,6 +240,13 @@
                 errormsg+="<p>FOLLOWING FEILD(s) ARE MISSING :" + fieldmissing +"</p>";
                 
             }
+        if( update_total < update_close || update_total < update_death || update_total < update_recover ||update_close < update_recover || update_close < update_death ||update_recover < update_death ){
+            
+            errormsg+="<p> DATA IS NOT IN CORRECT ORDER MAKE SURE DATA IS ORGANISED <p>"
+        }
+            
+            
+            
         if( $.isNumeric(update_total) == false )
             {
                 errormsg+="<br>TOTAL is not numeric data";
@@ -230,6 +270,7 @@
         if(errormsg != "")
             {
                 document.getElementById("errormsgs").innerHTML = errormsg + "PLEASE ENTER VALID DATA";
+                
             }
         
         
@@ -281,11 +322,11 @@
         
         
         //disclamer 
-    /*    
+   
   $(document).ready(function(){
                $("#exampleModal2").modal('show');
        })    
-      */   
+
 
 
        

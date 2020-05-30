@@ -1,12 +1,12 @@
 body{
     background: black;
-    height: 1000rem;
+    
 }
 .text{
     color: white;
 }
-#center{
-    
+#emergency-no{
+    margin-left: 28rem;
 }
 .jumbotron{
     height: 35rem;
@@ -20,11 +20,11 @@ body{
 }
 
 #jumbo-right{
-    
-    float: right;
-    width: 50%;
+    width: 40%;
     height: 20rem;
-    padding-left: 3rem;
+    position: relative;
+    top: -27rem;
+    left: 38rem;
    
 }
 #iframe{
@@ -62,6 +62,50 @@ body{
     
 }
 #error-cont{
+    color: red !important;
+    padding: 3rem;
+   
+}
+#footer{
+    height: 10rem;
+    font-size: 1.2rem;
+    
+    
+}
+
+
+
+#qw{
+     border-top: 1px white solid;
+    padding: 5rem 0rem; 
+}
+#warning{
+    
+    color: yellow;
+    
+}
+#war{
     color: red;
-    margin: 4rem;
+}
+@media(max-width: 1100px){
+    
+    body{
+        width: 100%;
+    }
+    #jumbo-left{
+        float: left;
+        width: 100%;
+    }
+    #jumbo-right{
+        float: left;
+     width: 100%;
+        top: 0rem;
+        left: 0rem;
+    }
+    .jumbotron{
+        height:52rem;
+    }
+        
+    
+    
 }
