@@ -1,0 +1,30 @@
+body{
+    background: black;
+    
+}
+#text{
+    padding-top:7rem; 
+    color: white;
+    font-size: 1.2rem;
+}
+#footer{
+    margin-top: 5rem;
+       height: 10rem;
+    font-size: 1.2rem;
+}
+#qw{
+     border-top: 1px white solid;
+    padding: 5rem 0rem; 
+}
+#text-all{
+    color: white;
+}
+
+.card-body{
+    background-color: grey;
+}
+.btnn-all{
+ color: black;
+text-align: center;
+font-size: 1rem;
+}

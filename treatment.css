@@ -1,0 +1,28 @@
+body{
+    background: black;
+   
+}
+#text1{
+    color: white;
+    margin-top: 7rem;
+    font-size: 2rem;
+}
+.text{
+ text-decoration: none;
+}
+.text:hover{
+    color: skyblue;
+    text-decoration: none;
+}
+.text:active{
+    text-decoration: none;
+}
+#footer{
+    margin-top: 5rem;
+       height: 10rem;
+    font-size: 1.2rem;
+}
+#qw{
+     border-top: 1px white solid;
+    padding: 5rem 0rem; 
+}

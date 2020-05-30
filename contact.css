@@ -1,0 +1,20 @@
+body{
+    background: black;
+   
+}
+#text{
+    padding-top:7rem; 
+    color: white;
+    font-size: 2rem;
+}
+
+#footer{
+    border-top: 1px white solid;
+    margin-top: 5rem;
+       height: 10rem;
+    font-size: 1.2rem;
+}
+#qw{
+     border-top: 1px white solid;
+    padding: 5rem 0rem; 
+}
