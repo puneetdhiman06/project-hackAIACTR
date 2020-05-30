@@ -1,6 +1,5 @@
 body{
     background: black;
-   
 }
 #text{
     padding-top:7rem; 
@@ -15,4 +14,8 @@ body{
 #qw{
      border-top: 1px white solid;
     padding: 5rem 0rem; 
+}
+#call{
+     text-decoration: none;
+   margin-left:27rem; 
 }
