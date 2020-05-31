@@ -11,7 +11,6 @@ body{
 }
 #call{
    text-decoration: none;
-   margin-left:27rem; 
 }
 .jumbotron{     
     height: 35rem;      
@@ -41,7 +40,6 @@ body{
 }
 #info-infected{
     color: white;
-    text-align: center;
 }
 #recover{
     width: 94%;
@@ -88,12 +86,14 @@ body{
     }
     #jumbo-right{
         float: left;
-     width: 100%;
+        width: 100%;
         top: 0rem;
         left: 0rem;
     }
     .jumbotron{
         height:52rem;
     }
+  
+   
         
 }
