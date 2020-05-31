@@ -253,10 +253,6 @@ $("#update-btn").click(function()
     if( fieldmissing != ""){
          errormsg+="<p>FOLLOWING FEILD(s) ARE MISSING :" + fieldmissing +"</p>";
         }
-    if( update_total < update_close || update_total < update_death || update_total < update_recover ||update_close < update_recover || update_close < update_death ||update_recover < update_death ){
-
-        errormsg+="<p> DATA IS NOT IN CORRECT ORDER MAKE SURE DATA IS ORGANISED <p>"
-    }
     if( $.isNumeric(update_total) == false )
         {
             errormsg+="<br>TOTAL is not numeric data";
