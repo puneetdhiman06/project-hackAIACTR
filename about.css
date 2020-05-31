@@ -1,6 +1,5 @@
 body{
     background: black;
-    
 }
 #text{
     padding-top:7rem; 
@@ -19,12 +18,10 @@ body{
 #text-all{
     color: white;
 }
-
 .card-body{
     background-color: grey;
 }
-.btnn-all{
- color: black;
-text-align: center;
-font-size: 1rem;
+#call{
+   text-decoration: none;
+   margin-left:27rem; 
 }

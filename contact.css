@@ -1,15 +1,13 @@
 body{
     background: black;
-   
 }
 #text{
     padding-top:7rem; 
     color: white;
-    font-size: 2rem;
+    font-size: 0.9rem;
 }
-
 #footer{
-    border-top: 1px white solid;
+
     margin-top: 5rem;
        height: 10rem;
     font-size: 1.2rem;
@@ -17,4 +15,8 @@ body{
 #qw{
      border-top: 1px white solid;
     padding: 5rem 0rem; 
+}
+#call{
+   text-decoration: none;
+   margin-left:27rem; 
 }

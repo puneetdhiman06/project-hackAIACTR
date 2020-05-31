@@ -1,11 +1,14 @@
 body{
     background: black;
-   
 }
 #text1{
     color: white;
     margin-top: 7rem;
     font-size: 2rem;
+}
+#call{
+   text-decoration: none;
+   margin-left:27rem; 
 }
 .text{
  text-decoration: none;
